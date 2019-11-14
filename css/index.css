@@ -166,6 +166,7 @@ header {
 }
 header div {
   width: 50%;
+  align-content: center;
 }
 header div h2 {
   font-size: 3rem;
@@ -185,22 +186,37 @@ header nav a {
 }
 .landing-page-top {
   display: flex;
+  width: 100%;
 }
 .landing-page-top .headline {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-align: center;
+  background-color: #a9a9a9;
   width: 45%;
   margin: 1%;
   padding: 1%;
 }
-.landing-page-top .eat-img {
-  width: 50%;
+.landing-page-top .headline h2 {
+  margin: 1%;
+  padding: 1%;
 }
-.landing-page-top .eat-img img {
-  height: 25vh;
+.landing-page-top .headline p {
+  margin: 2%;
+  padding: 2%;
+}
+.landing-page-top .eat-image {
+  width: 45%;
+  margin: 1%;
+  padding: 1%;
+}
+.landing-page-top .eat-image img {
+  height: 50vh;
   width: auto;
+  margin: 1%;
+  padding: 1%;
 }
 .landing-page-middle div {
   width: 50%;
