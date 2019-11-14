@@ -4,6 +4,18 @@
   display: flex;
   flex-direction: column;
 
+  @media @tablet {
+    width: 700px;
+  }
+
+  @media @nine-hundredpx {
+    width: 900px;
+  }
+
+  @media @desktop {
+    width: 100%;
+  }
+
   .about-header {
     color: beige;
     display: flex;
@@ -11,6 +23,15 @@
     flex-direction: row;
     width: 95%;
     margin: 0 auto;
+
+    @media @tablet {
+      width: 100%;
+      //background: red;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
 
     @media @small-vp {
       //background: red;
@@ -28,10 +49,27 @@
       text-align: center;
     }
 
+    @media @nine-hundredpx {
+      //background: red;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    @media @desktop {
+      width: 95%;
+      margin: 0 auto;
+    }
+
     h1 {
       font-family: "Baloo Bhai", cursive;
       font-size: 3rem;
       width: 45%;
+
+      @media @tablet {
+        width: 100%;
+      }
 
       @media @small-vp {
         font-size: 2.7rem;
@@ -48,6 +86,12 @@
         border: 2px double beige;
         border-radius: 5%;
       }
+
+      @media @nine-hundredpx {
+        //background: crimson;
+        width: 40%;
+        font-size: 2.5rem;
+      }
     }
 
     nav {
@@ -56,6 +100,10 @@
       display: flex;
       justify-content: space-evenly;
       flex-direction: row;
+
+      @media @tablet {
+        width: 100%;
+      }
 
       @media @small-vp {
         //background: red;
@@ -71,6 +119,11 @@
         //background: red;
         padding-bottom: 30px;
         margin: 0 auto;
+      }
+
+      @media @nine-hundredpx {
+        //background: crimson;
+        width: 55%;
       }
 
       a {
@@ -92,6 +145,10 @@
 
         @media @phone {
           font-size: 0.9rem;
+        }
+
+        @media @nine-hundredpx {
+          font-size: 1rem;
         }
       }
 
@@ -127,6 +184,10 @@
       background: black;
       font-family: "Cabin", sans-serif;
 
+      @media @tablet {
+        padding: 20px;
+      }
+
       @media @small-vp {
         font-size: 0.9rem;
         padding: 30px;
@@ -159,8 +220,17 @@
       flex-direction: column;
     }
 
-    .enoka-container {
+    .dev-container {
       background: grey;
+
+      @media @tablet {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        //flex-direction: row;
+        background: #0d0811;
+        padding: 20px;
+      }
 
       @media @small-vp {
         background: #0d0811;
@@ -179,12 +249,22 @@
       }
 
       .img-container {
+        @media @tablet {
+          //background: red;
+          width: 30%;
+        }
+
         @media @small-vp {
           //background: red;
         }
 
-        .enoka-img {
+        .dev-img {
           //border: 2px solid green;
+
+          @media @tablet {
+            width: 100%;
+            border-radius: 100%;
+          }
 
           @media @small-vp {
             width: 60%;
@@ -204,8 +284,18 @@
         }
       }
 
-      .about-enoka {
+      .about-dev {
         // background: blueviolet;
+
+        @media @tablet {
+          width: 50%;
+          // background: crimson;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          //height: 60%;
+        }
 
         @media @small-vp {
           text-align: center;
@@ -224,47 +314,57 @@
           font-family: "Cabin", sans-serif;
           color: beige;
         }
-      }
 
-      .dev-btn {
-        background: black;
+        .dev-btn {
+          background: black;
 
-        @media @small-vp {
-          // background: red;
-          text-align: center;
-          width: 75%;
-          margin: 0 auto;
-          display: flex;
-          justify-content: center;
-          padding: 10px;
-          border-radius: 5%;
-        }
-
-        @media @phone {
-          // background: red;
-          text-align: center;
-          width: 75%;
-          margin: 0 auto;
-          display: flex;
-          justify-content: center;
-          padding: 10px;
-          border-radius: 5%;
-        }
-
-        .dev-a {
-          font-family: "Cabin", sans-serif;
-          color: beige;
-          text-decoration: none;
+          @media @tablet {
+            width: 90%;
+            margin: 0 auto;
+            height: 37px;
+          }
 
           @media @small-vp {
-            font-size: 0.7rem;
+            // background: red;
+            text-align: center;
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5%;
           }
 
           @media @phone {
-            font-size: 0.7rem;
+            // background: red;
+            text-align: center;
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5%;
+          }
+
+          .dev-a {
+            font-family: "Cabin", sans-serif;
+            color: beige;
+            text-decoration: none;
+
+            @media @tablet {
+              font-size: 0.8rem;
+            }
+
+            @media @small-vp {
+              font-size: 0.7rem;
+            }
+
+            @media @phone {
+              font-size: 0.7rem;
+            }
           }
         }
       }
-    } //end of enoka container
+    } //end of dev-container
   } //end of dev-contents
 } //end of foodie-content
