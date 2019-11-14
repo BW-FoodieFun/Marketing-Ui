@@ -194,3 +194,10 @@ header nav a {
   height: 70vh;
   width: auto;
 }
+.landing-page-middle div {
+  width: 50%;
+}
+.landing-page-middle img {
+  height: 70vh;
+  width: auto;
+}
