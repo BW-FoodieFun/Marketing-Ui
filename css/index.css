@@ -185,13 +185,21 @@ header nav a {
 }
 .landing-page-top {
   display: flex;
-  flex-direction: row;
 }
 .landing-page-top .headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   width: 45%;
+  margin: 1%;
+  padding: 1%;
 }
-.landing-page-top img {
-  height: 70vh;
+.landing-page-top .eat-img {
+  width: 50%;
+}
+.landing-page-top .eat-img img {
+  height: 25vh;
   width: auto;
 }
 .landing-page-middle div {
