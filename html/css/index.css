@@ -128,10 +128,10 @@ table {
 }
 * {
 	box-sizing: border-box;
-	background-color: #0d0811;
 }
 html {
 	font-size: 62.5%;
+	background-color: #0d0811;
 }
 html,
 body {
@@ -159,7 +159,16 @@ p {
 	width: 100%;
 	margin: 0 auto;
 }
-.navigation {
+header {
 	display: flex;
 	flex-direction: row;
+}
+header div {
+	width: 45%;
+}
+header nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 48%;
 }
