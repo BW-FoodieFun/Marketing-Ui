@@ -5,11 +5,10 @@
 	.headline {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-content: center;
 		text-align: center;
 		background-color: #a9a9a9;
-		width: 45%;
+		border: 2px solid white;
+		width: 95%;
 		.spacing(1%, 1%);
 
 		h2 {
@@ -22,12 +21,12 @@
 	}
 
 	.eat-image {
-		width: 45%;
+		width: 100%;
 		.spacing(1%, 1%);
 
 		img {
-			height: 50vh;
-			width: auto;
+			height: auto;
+			width: 95%;
 			.spacing(1%, 1%);
 		}
 	}
@@ -35,12 +34,21 @@
 
 .landing-page-middle {
 	display: flex;
+	width: 100%;
 
-	div {
-		width: 50%;
-	}
 	img {
 		height: 70vh;
 		width: auto;
+		.spacing(2%, 2%);
+	}
+
+	.capabilities {
+		display: flex;
+		flex-direction: column;
+		.spacing(2%,2%);
+
+		h2 {
+			font-size: 3rem;
+		}
 	}
 }

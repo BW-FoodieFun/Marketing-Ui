@@ -171,20 +171,21 @@ header div {
   padding: 2%;
 }
 header div h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
 }
 header nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 95%;
 }
 header nav a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff8f4;
-  margin: 1%;
+  border: 1px solid #fff8f4;
+  margin: 2%;
   padding: 2%;
 }
 .landing-page-top {
@@ -194,11 +195,10 @@ header nav a {
 .landing-page-top .headline {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   text-align: center;
   background-color: #a9a9a9;
-  width: 45%;
+  border: 2px solid white;
+  width: 95%;
   margin: 1%;
   padding: 1%;
 }
@@ -211,23 +211,32 @@ header nav a {
   padding: 2%;
 }
 .landing-page-top .eat-image {
-  width: 45%;
+  width: 100%;
   margin: 1%;
   padding: 1%;
 }
 .landing-page-top .eat-image img {
-  height: 50vh;
-  width: auto;
+  height: auto;
+  width: 95%;
   margin: 1%;
   padding: 1%;
 }
 .landing-page-middle {
   display: flex;
-}
-.landing-page-middle div {
-  width: 50%;
+  width: 100%;
 }
 .landing-page-middle img {
   height: 70vh;
   width: auto;
+  margin: 2%;
+  padding: 2%;
+}
+.landing-page-middle .capabilities {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  padding: 2%;
+}
+.landing-page-middle .capabilities h2 {
+  font-size: 3rem;
 }
