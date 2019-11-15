@@ -8,14 +8,15 @@
 		flex-direction: column;
 		text-align: center;
 		width: 95%;
-		.spacing(1%, 1%);
+		.spacing(2%, 2%);
 
 		h2 {
 			.spacing(1%, 1%);
 		}
 
 		p {
-			.spacing(2%, 2%);
+			.spacing(1%, 1%);
+			line-height: 2rem;
 		}
 	}
 
@@ -31,27 +32,27 @@
 	}
 }
 
-.landing-page-middle {
+.capabilities {
 	display: flex;
 	width: 100%;
+	border-top: 2px dashed floralwhite;
 
-	.diner {
+	.capabilities-left {
 		width: 100%;
 		.spacing(1%, 1%);
-		border: 2px solid red;
-		height: auto;
 
 		img {
-			width: 95%;
-			.spacing(1%, 1%);
+			height: auto;
+			width: 100%;
 		}
 	}
 
-	.capabilities {
+	.capabilities-right {
 		display: flex;
 		flex-direction: column;
-		.spacing(2%,2%);
-		width: 45%;
+		align-items: center;
+		justify-content: center;
+		width: 95%;
 		border: 2px solid red;
 	}
 }

@@ -198,16 +198,17 @@ header nav a {
   flex-direction: column;
   text-align: center;
   width: 95%;
-  margin: 1%;
-  padding: 1%;
+  margin: 2%;
+  padding: 2%;
 }
 .introduction .introduction-left h2 {
   margin: 1%;
   padding: 1%;
 }
 .introduction .introduction-left p {
-  margin: 2%;
-  padding: 2%;
+  margin: 1%;
+  padding: 1%;
+  line-height: 2rem;
 }
 .introduction .introduction-right {
   width: 100%;
@@ -220,28 +221,26 @@ header nav a {
   margin: 1%;
   padding: 1%;
 }
-.landing-page-middle {
+.capabilities {
   display: flex;
   width: 100%;
+  border-top: 2px dashed floralwhite;
 }
-.landing-page-middle .diner {
+.capabilities .capabilities-left {
   width: 100%;
   margin: 1%;
   padding: 1%;
-  border: 2px solid red;
+}
+.capabilities .capabilities-left img {
   height: auto;
+  width: 100%;
 }
-.landing-page-middle .diner img {
-  width: 95%;
-  margin: 1%;
-  padding: 1%;
-}
-.landing-page-middle .capabilities {
+.capabilities .capabilities-right {
   display: flex;
   flex-direction: column;
-  margin: 2%;
-  padding: 2%;
-  width: 45%;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
   border: 2px solid red;
 }
 .benefits {
