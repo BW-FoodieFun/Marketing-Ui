@@ -188,12 +188,12 @@ header nav a {
   margin: 2%;
   padding: 2%;
 }
-.landing-page-top {
+.introduction {
   display: flex;
   width: 100%;
   border-top: 2px dashed floralwhite;
 }
-.landing-page-top .headline {
+.introduction .introduction-left {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -201,20 +201,20 @@ header nav a {
   margin: 1%;
   padding: 1%;
 }
-.landing-page-top .headline h2 {
+.introduction .introduction-left h2 {
   margin: 1%;
   padding: 1%;
 }
-.landing-page-top .headline p {
+.introduction .introduction-left p {
   margin: 2%;
   padding: 2%;
 }
-.landing-page-top .eat-image {
+.introduction .introduction-right {
   width: 100%;
   margin: 1%;
   padding: 1%;
 }
-.landing-page-top .eat-image img {
+.introduction .introduction-right img {
   height: auto;
   width: 100%;
   margin: 1%;
@@ -251,13 +251,28 @@ header nav a {
   margin: 2%;
   padding: 2%;
 }
-.benefits div {
+.benefits .benefits-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 95%;
   margin: 2%;
   padding: 2%;
+}
+.benefits .benefits-left h2 {
+  margin: 2%;
+  padding: 2%;
+}
+.benefits .benefits-right {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+.benefits .benefits-right img {
+  height: auto;
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
 }
 footer {
   display: flex;
