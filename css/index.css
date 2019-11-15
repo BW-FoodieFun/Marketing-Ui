@@ -249,6 +249,12 @@ footer nav a {
   margin: 1%;
   padding: 1%;
 }
+@media (max-width: 600px) {
+  .introduction {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .capabilities {
   display: flex;
   width: 100%;
@@ -273,6 +279,12 @@ footer nav a {
 .capabilities .capabilities-right h2 {
   margin: 1%;
   padding: 1%;
+}
+@media (max-width: 600px) {
+  .capabilities {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .notebook {
   display: flex;
@@ -307,6 +319,12 @@ footer nav a {
   margin: 1%;
   padding: 1%;
 }
+@media (max-width: 600px) {
+  .notebook {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .benefits {
   display: flex;
   width: 95%;
@@ -340,9 +358,17 @@ footer nav a {
   margin: 1%;
   padding: 1%;
 }
+@media (max-width: 600px) {
+  .benefits {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .sign-up {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .sign-up .sign-up-bottom {
   display: flex;
@@ -351,4 +377,7 @@ footer nav a {
   width: 100%;
   margin: 2%;
   padding: 2%;
+}
+.sign-up .sign-up-bottom button {
+  text-decoration: none;
 }
