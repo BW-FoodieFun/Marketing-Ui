@@ -274,6 +274,39 @@ footer nav a {
   margin: 1%;
   padding: 1%;
 }
+.notebook {
+  display: flex;
+  width: 100%;
+  border-top: 2px dashed floralwhite;
+}
+.notebook .notebook-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 95%;
+  margin: 2%;
+  padding: 2%;
+}
+.notebook .notebook-left h2 {
+  margin: 1%;
+  padding: 1%;
+}
+.notebook .notebook-left p {
+  margin: 1%;
+  padding: 1%;
+  line-height: 2rem;
+}
+.notebook .notebook-right {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+.notebook .notebook-right img {
+  height: auto;
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
 .benefits {
   display: flex;
   width: 95%;
