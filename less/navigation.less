@@ -1,13 +1,15 @@
 header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 
 	div {
-		width: 50%;
+		width: 95%;
 		align-content: center;
+		.spacing(1%, 2%);
 
 		h2 {
 			font-size: 3rem;
+			text-align: center;
 		}
 	}
 
@@ -15,7 +17,7 @@ header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 50%;
+		width: 95%;
 
 		a {
 			text-decoration: none;
@@ -23,5 +25,8 @@ header {
 			color: #fff8f4;
 			.spacing(1%, 2%);
 		}
+	}
+
+	@media @mobile {
 	}
 }
