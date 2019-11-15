@@ -1,13 +1,12 @@
 .landing-page-top {
 	display: flex;
 	width: 100%;
+	border-top: 2px dashed floralwhite;
 
 	.headline {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		background-color: #a9a9a9;
-		border: 2px solid white;
 		width: 95%;
 		.spacing(1%, 1%);
 
@@ -26,7 +25,7 @@
 
 		img {
 			height: auto;
-			width: 95%;
+			width: 100%;
 			.spacing(1%, 1%);
 		}
 	}
@@ -36,19 +35,23 @@
 	display: flex;
 	width: 100%;
 
-	img {
-		height: 70vh;
-		width: auto;
-		.spacing(2%, 2%);
+	.diner {
+		width: 100%;
+		.spacing(1%, 1%);
+		border: 2px solid red;
+		height: auto;
+
+		img {
+			width: 95%;
+			.spacing(1%, 1%);
+		}
 	}
 
 	.capabilities {
 		display: flex;
 		flex-direction: column;
 		.spacing(2%,2%);
-
-		h2 {
-			font-size: 3rem;
-		}
+		width: 45%;
+		border: 2px solid red;
 	}
 }
