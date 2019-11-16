@@ -50,10 +50,26 @@
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
+		line-height: 2rem;
 		.spacing(2%, 2%);
 
-		button {
-			text-decoration: none;
+		h2 {
+			.spacing(1%, 1%);
+		}
+
+		p {
+			width: 50%;
+
+			@media @mobile {
+				width: 90%;
+				.spacing(1%, 1%);
+			}
+		}
+
+		.button {
+			text-decoration: floralwhite;
+			background-color: #a9a9a9;
+			.spacing(1%, 1%);
 		}
 	}
 }

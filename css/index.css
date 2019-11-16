@@ -246,8 +246,15 @@ footer nav a {
 .introduction .introduction-right img {
   height: auto;
   width: 100%;
-  margin: 1%;
-  padding: 1%;
+  margin: 2%;
+  padding: 2%;
+}
+@media (max-width: 600px) {
+  .introduction .introduction-right img {
+    width: 95%;
+    margin: 1%;
+    padding: 2%;
+  }
 }
 @media (max-width: 600px) {
   .introduction {
@@ -261,20 +268,28 @@ footer nav a {
   border-top: 2px dashed floralwhite;
 }
 .capabilities .capabilities-left {
-  width: 100%;
-  margin: 1%;
-  padding: 1%;
+  width: 95%;
+  margin: 2%;
+  padding: 2%;
 }
 .capabilities .capabilities-left img {
   height: auto;
   width: 100%;
 }
+@media (max-width: 600px) {
+  .capabilities .capabilities-left img {
+    width: 95%;
+    margin: 1%;
+    padding: 2%;
+  }
+}
 .capabilities .capabilities-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   width: 95%;
+  margin: 2%;
+  padding: 2%;
 }
 .capabilities .capabilities-right h2 {
   margin: 1%;
@@ -318,6 +333,13 @@ footer nav a {
   width: 100%;
   margin: 1%;
   padding: 1%;
+}
+@media (max-width: 600px) {
+  .notebook .notebook-right img {
+    width: 95%;
+    margin: 1%;
+    padding: 2%;
+  }
 }
 @media (max-width: 600px) {
   .notebook {
@@ -375,9 +397,27 @@ footer nav a {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  line-height: 2rem;
   margin: 2%;
   padding: 2%;
 }
-.sign-up .sign-up-bottom button {
-  text-decoration: none;
+.sign-up .sign-up-bottom h2 {
+  margin: 1%;
+  padding: 1%;
+}
+.sign-up .sign-up-bottom p {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .sign-up .sign-up-bottom p {
+    width: 90%;
+    margin: 1%;
+    padding: 1%;
+  }
+}
+.sign-up .sign-up-bottom .button {
+  text-decoration: floralwhite;
+  background-color: #a9a9a9;
+  margin: 1%;
+  padding: 1%;
 }
