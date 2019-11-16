@@ -1,3 +1,412 @@
+
+body {
+  background: #09020f;
+}
+.foodie-content {
+  background: #0d0811;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.foodie-content .foodie-header {
+  color: beige;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95%;
+  margin: 0 auto;
+}
+.foodie-content .foodie-header h1 {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 3rem;
+  width: 45%;
+}
+.foodie-content .foodie-header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.foodie-content .foodie-header nav a {
+  color: bisque;
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-top: 70px;
+}
+.foodie-content .foodie-header nav a:hover {
+  color: red;
+  cursor: pointer;
+}
+.about-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  .about-content {
+    width: 700px;
+  }
+}
+@media (min-width: 900px) {
+  .about-content {
+    width: 900px;
+  }
+}
+@media (min-width: 1100px) {
+  .about-content {
+    width: 100%;
+  }
+}
+.about-content .about-header {
+  color: beige;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .about-content .about-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .about-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .about-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 900px) {
+  .about-content .about-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1100px) {
+  .about-content .about-header {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+.about-content .about-header h1 {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 3rem;
+  width: 45%;
+}
+@media (min-width: 700px) {
+  .about-content .about-header h1 {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .about-header h1 {
+    font-size: 2.7rem;
+    width: 100%;
+    background: #0d0811;
+    border: 2px double beige;
+    border-radius: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .about-header h1 {
+    font-size: 2.7rem;
+    width: 100%;
+    background: #0d0811;
+    border: 2px double beige;
+    border-radius: 5%;
+  }
+}
+@media (min-width: 900px) {
+  .about-content .about-header h1 {
+    width: 40%;
+    font-size: 2.5rem;
+  }
+}
+.about-content .about-header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+@media (min-width: 700px) {
+  .about-content .about-header nav {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .about-header nav {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .about-header nav {
+    width: 95%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .about-content .about-header nav {
+    width: 55%;
+  }
+}
+.about-content .about-header nav a {
+  color: bisque;
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-top: 70px;
+}
+@media (max-width: 400px) {
+  .about-content .about-header nav a {
+    font-size: 1.3rem;
+    display: flex;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .about-header nav a {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 900px) {
+  .about-content .about-header nav a {
+    font-size: 1rem;
+  }
+}
+.about-content .about-header nav a:hover {
+  color: red;
+  cursor: pointer;
+}
+.about-content .foodie-about {
+  background: url("https://previews.123rf.com/images/marchie/marchie1505/marchie150500031/40114604-seamless-pattern-background-asian-food-.jpg");
+}
+.about-content .foodie-about h2 {
+  font-family: "Baloo Bhai", cursive;
+  color: beige;
+  background: black;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .about-content .foodie-about h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .foodie-about h2 {
+    font-size: 2rem;
+  }
+}
+.about-content .foodie-about p {
+  color: beige;
+  background: black;
+  font-family: "Cabin", sans-serif;
+}
+@media (min-width: 700px) {
+  .about-content .foodie-about p {
+    padding: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .foodie-about p {
+    font-size: 0.9rem;
+    padding: 30px;
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    border: 1px double bisque;
+    border-radius: 7%;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .foodie-about p {
+    font-size: 0.7rem;
+    padding: 30px;
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    border: 1px double bisque;
+    border-radius: 7%;
+  }
+}
+.about-content .dev-contents {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 400px) {
+  .about-content .dev-contents {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.about-content .dev-contents .dev-container {
+  background: grey;
+}
+@media (min-width: 700px) {
+  .about-content .dev-contents .dev-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #0d0811;
+    padding: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .dev-contents .dev-container {
+    background: #0d0811;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .dev-contents .dev-container {
+    background: #0d0811;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 700px) {
+  .about-content .dev-contents .dev-container .img-container {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+}
+@media (min-width: 700px) {
+  .about-content .dev-contents .dev-container .img-container .dev-img {
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .dev-contents .dev-container .img-container .dev-img {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .dev-contents .dev-container .img-container .dev-img {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+  }
+}
+@media (min-width: 700px) {
+  .about-content .dev-contents .dev-container .about-dev {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .dev-contents .dev-container .about-dev {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .dev-contents .dev-container .about-dev {
+    text-align: center;
+  }
+}
+.about-content .dev-contents .dev-container .about-dev h3 {
+  font-family: "Baloo Bhai", cursive;
+  color: beige;
+}
+.about-content .dev-contents .dev-container .about-dev p {
+  font-family: "Cabin", sans-serif;
+  color: beige;
+}
+.about-content .dev-contents .dev-container .about-dev .dev-btn {
+  background: black;
+}
+@media (min-width: 700px) {
+  .about-content .dev-contents .dev-container .about-dev .dev-btn {
+    width: 90%;
+    margin: 0 auto;
+    height: 37px;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .dev-contents .dev-container .about-dev .dev-btn {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .dev-contents .dev-container .about-dev .dev-btn {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5%;
+  }
+}
+.about-content .dev-contents .dev-container .about-dev .dev-btn .dev-a {
+  font-family: "Cabin", sans-serif;
+  color: beige;
+  text-decoration: none;
+}
+@media (min-width: 700px) {
+  .about-content .dev-contents .dev-container .about-dev .dev-btn .dev-a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .dev-contents .dev-container .about-dev .dev-btn .dev-a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .dev-contents .dev-container .about-dev .dev-btn .dev-a {
+    font-size: 0.7rem;
+  }
+}
+=======
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -421,3 +830,4 @@ footer nav a {
   margin: 1%;
   padding: 1%;
 }
+
