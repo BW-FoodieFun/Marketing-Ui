@@ -701,18 +701,19 @@ footer nav a:hover {
   display: flex;
   width: 100%;
   border-top: 2px dashed #ffe4c4;
+  color: #ffe4c4;
 }
-.capabilities color_ .capabilities-left {
+.capabilities .capabilities-left {
   width: 95%;
   margin: 2%;
   padding: 2%;
 }
-.capabilities color_ .capabilities-left img {
+.capabilities .capabilities-left img {
   height: auto;
   width: 100%;
 }
 @media (max-width: 600px) {
-  .capabilities color_ .capabilities-left img {
+  .capabilities .capabilities-left img {
     width: 95%;
     margin: 1%;
     padding: 2%;
