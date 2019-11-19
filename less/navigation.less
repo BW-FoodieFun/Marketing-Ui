@@ -1,31 +1,44 @@
 header {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 
 	div {
-		width: 95%;
+		width: 15%;
 		align-content: center;
 		.spacing(1%, 2%);
 
-		h2 {
-			font-size: 5rem;
-			text-align: center;
-			color: @nav-main-color;
+		img {
+			height: auto;
+			width: 100%;
+			.spacing(1%, 1%);
+		}
+
+		@media @mobile {
+			width: 50%;
+			.spacing(1%, 2%);
+			align-content: center;
 		}
 	}
 
 	nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		width: 95%;
+		.nav-main-features(space-around, center);
 
 		a {
+			justify-content: center;
 			text-decoration: none;
-			font-size: 1.5rem;
-			color: @nav-main-color;
-			border: 1px solid @nav-main-color;
-			.spacing(2%, 2%);
+			font-size: 1.8rem;
+			color: @main-color;
+			.spacing(8%, 0);
 		}
+
+		a:hover {
+			cursor: pointer;
+			background-color: @secondary-color;
+			color: black;
+		}
+	}
+
+	@media @mobile {
+		flex-direction: column;
 	}
 }
