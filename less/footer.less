@@ -1,6 +1,6 @@
 footer {
 	display: flex;
-	border-top: 2px dashed floralwhite;
+	border-top: 2px dashed @main-color;
 
 	div {
 		width: 50%;
@@ -14,17 +14,20 @@ footer {
 	}
 
 	nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		width: 50%;
+		.nav-main-features(space-around, none);
 
 		a {
 			text-decoration: none;
 			font-size: 1.5rem;
 			text-align: center;
-			color: #fff8f4;
+			color: @main-color;
 			.spacing(2%, 2%);
+		}
+
+		a:hover {
+			cursor: pointer;
+			background-color: @secondary-color;
+			color: black;
 		}
 	}
 }

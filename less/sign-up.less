@@ -3,7 +3,7 @@
 .benefits {
 	display: flex;
 	width: 95%;
-	border-top: 1px dashed floralwhite;
+	border-top: 2px dashed @main-color;
 	.spacing(2%, 2%);
 
 	.benefits-left {
@@ -44,6 +44,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	border-top: 2px dashed @main-color;
 
 	.sign-up-bottom {
 		display: flex;
@@ -67,9 +68,18 @@
 		}
 
 		.button {
-			text-decoration: floralwhite;
+			width: 20%;
+			height: auto;
+			font-size: 2rem;
+			color: @secondary-color;
 			background-color: #a9a9a9;
 			.spacing(1%, 1%);
+		}
+
+		.button:hover {
+			cursor: pointer;
+			background-color: @secondary-color;
+			color: black;
 		}
 	}
 }
