@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .flex-column {
   display: flex;
   justify-content: center;
@@ -9,6 +10,9 @@
   justify-content: space-between;
   flex-direction: row;
 }
+=======
+
+>>>>>>> 07768f71fb179e0ee3c9409fb29fc26cdcd74190
 body {
   background: #09020f;
 }
@@ -613,3 +617,428 @@ font-family: 'Satisfy', cursive;
     font-size: 0.7rem;
   }
 }
+=======
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-color: #262323;
+  color: #fff8f4;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+header div {
+  width: 95%;
+  align-content: center;
+  margin: 1%;
+  padding: 2%;
+}
+header div h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff8f4;
+  border: 1px solid #fff8f4;
+  margin: 2%;
+  padding: 2%;
+}
+footer {
+  display: flex;
+  border-top: 2px dashed floralwhite;
+}
+footer div {
+  width: 50%;
+  align-content: center;
+  margin: 1%;
+  padding: 2%;
+}
+footer div h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+footer nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff8f4;
+  margin: 2%;
+  padding: 2%;
+}
+.introduction {
+  display: flex;
+  width: 100%;
+  border-top: 2px dashed floralwhite;
+}
+.introduction .introduction-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 95%;
+  margin: 2%;
+  padding: 2%;
+}
+.introduction .introduction-left h2 {
+  margin: 1%;
+  padding: 1%;
+}
+.introduction .introduction-left p {
+  margin: 1%;
+  padding: 1%;
+  line-height: 2rem;
+}
+.introduction .introduction-right {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+.introduction .introduction-right img {
+  height: auto;
+  width: 100%;
+  margin: 2%;
+  padding: 2%;
+}
+@media (max-width: 600px) {
+  .introduction .introduction-right img {
+    width: 95%;
+    margin: 1%;
+    padding: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .introduction {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.capabilities {
+  display: flex;
+  width: 100%;
+  border-top: 2px dashed floralwhite;
+}
+.capabilities .capabilities-left {
+  width: 95%;
+  margin: 2%;
+  padding: 2%;
+}
+.capabilities .capabilities-left img {
+  height: auto;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .capabilities .capabilities-left img {
+    width: 95%;
+    margin: 1%;
+    padding: 2%;
+  }
+}
+.capabilities .capabilities-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 95%;
+  margin: 2%;
+  padding: 2%;
+}
+.capabilities .capabilities-right h2 {
+  margin: 1%;
+  padding: 1%;
+}
+@media (max-width: 600px) {
+  .capabilities {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.notebook {
+  display: flex;
+  width: 100%;
+  border-top: 2px dashed floralwhite;
+}
+.notebook .notebook-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 95%;
+  margin: 2%;
+  padding: 2%;
+}
+.notebook .notebook-left h2 {
+  margin: 1%;
+  padding: 1%;
+}
+.notebook .notebook-left p {
+  margin: 1%;
+  padding: 1%;
+  line-height: 2rem;
+}
+.notebook .notebook-right {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+.notebook .notebook-right img {
+  height: auto;
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+@media (max-width: 600px) {
+  .notebook .notebook-right img {
+    width: 95%;
+    margin: 1%;
+    padding: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .notebook {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.benefits {
+  display: flex;
+  width: 95%;
+  border-top: 1px dashed floralwhite;
+  margin: 2%;
+  padding: 2%;
+}
+.benefits .benefits-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: 2%;
+  padding: 2%;
+}
+.benefits .benefits-left h2 {
+  margin: 2%;
+  padding: 2%;
+}
+.benefits .benefits-left p {
+  line-height: 2rem;
+}
+.benefits .benefits-right {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+.benefits .benefits-right img {
+  height: auto;
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+@media (max-width: 600px) {
+  .benefits {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up .sign-up-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  line-height: 2rem;
+  margin: 2%;
+  padding: 2%;
+}
+.sign-up .sign-up-bottom h2 {
+  margin: 1%;
+  padding: 1%;
+}
+.sign-up .sign-up-bottom p {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .sign-up .sign-up-bottom p {
+    width: 90%;
+    margin: 1%;
+    padding: 1%;
+  }
+}
+.sign-up .sign-up-bottom .button {
+  text-decoration: floralwhite;
+  background-color: #a9a9a9;
+  margin: 1%;
+  padding: 1%;
+}
+
