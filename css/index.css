@@ -606,10 +606,15 @@ header nav {
 header nav a {
   justify-content: center;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: #ffe4c4;
-  margin: 8%;
-  padding: 0;
+  margin: 7%;
+  padding: 1%;
+}
+@media (max-width: 600px) {
+  header nav a {
+    font-size: 1.8rem;
+  }
 }
 header nav a:hover {
   cursor: pointer;
