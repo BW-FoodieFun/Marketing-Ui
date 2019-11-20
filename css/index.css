@@ -1,11 +1,31 @@
+.flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.flex-row-space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 body {
   background: #09020f;
 }
+/*
+
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive;
+
+*/
 .foodie-content {
   background: #0d0811;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .foodie-content .foodie-header {
   color: beige;
@@ -15,16 +35,111 @@ body {
   width: 95%;
   margin: 0 auto;
 }
+@media (min-width: 700px) {
+  .foodie-content .foodie-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .foodie-content .foodie-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .foodie-content .foodie-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 900px) {
+  .foodie-content .foodie-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1100px) {
+  .foodie-content .foodie-header {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .foodie-content .foodie-header h1 {
-  font-family: "Baloo Bhai", cursive;
+  font-family: "Pacifico", cursive;
   font-size: 3rem;
   width: 45%;
+}
+@media (min-width: 700px) {
+  .foodie-content .foodie-header h1 {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .foodie-content .foodie-header h1 {
+    font-size: 2.7rem;
+    width: 100%;
+    background: #0d0811;
+    border: 2px double beige;
+    border-radius: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .foodie-content .foodie-header h1 {
+    font-size: 2.7rem;
+    width: 100%;
+    background: #0d0811;
+    border: 2px double beige;
+    border-radius: 5%;
+  }
+}
+@media (min-width: 900px) {
+  .foodie-content .foodie-header h1 {
+    width: 40%;
+    font-size: 2.5rem;
+  }
 }
 .foodie-content .foodie-header nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+}
+@media (min-width: 700px) {
+  .foodie-content .foodie-header nav {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .foodie-content .foodie-header nav {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .foodie-content .foodie-header nav {
+    width: 95%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .foodie-content .foodie-header nav {
+    width: 55%;
+  }
 }
 .foodie-content .foodie-header nav a {
   color: bisque;
@@ -35,9 +150,102 @@ body {
   font-size: 1.5rem;
   padding-top: 70px;
 }
+@media (max-width: 400px) {
+  .foodie-content .foodie-header nav a {
+    font-size: 1.3rem;
+    display: flex;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .foodie-content .foodie-header nav a {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 900px) {
+  .foodie-content .foodie-header nav a {
+    font-size: 1rem;
+  }
+}
 .foodie-content .foodie-header nav a:hover {
   color: red;
   cursor: pointer;
+}
+.foodie-content .food-header-img-container {
+  background: url("https://i1.wp.com/www.westside.social/wp-content/uploads/2017/12/food-background-food-concept-with-various-tasty-fresh-ingredients-for-cooking-italian-food-ingredients-view-from-above-with-copy-space_1220-1491-2-e1513108150131.jpg?ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foodie-content .food-header-img-container h2 {
+  background: black;
+  color: beige;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Lobster", cursive;
+}
+.foodie-content .food-header-img-container p {
+  font-family: "Permanent Marker", cursive;
+  color: beige;
+  background: #0d0811;
+  text-align: left;
+  padding: 20px;
+}
+.foodie-content .sushi-container {
+  background: red;
+}
+@media (max-width: 400px) {
+  .foodie-content .sushi-container {
+    color: beige;
+    background: #09020f;
+    font-family: "Permanent Marker", cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .foodie-content .sushi-container .sushi-text {
+    border: 2px double beige;
+    border-radius: 5%;
+    padding: 20px;
+  }
+}
+@media (max-width: 400px) and (max-width: 400px) {
+  .foodie-content .sushi-container .sushi-img-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 400px) and (max-width: 400px) and (max-width: 400px) {
+  .foodie-content .sushi-container .sushi-img-container displa .sushi-1 {
+    width: 250px;
+    height: 250px;
+    border: 5px groove beige;
+    border-radius: 5%;
+  }
+}
+@media (max-width: 400px) and (max-width: 400px) and (max-width: 400px) {
+  .foodie-content .sushi-container .sushi-img-container .sushi-2 {
+    width: 250px;
+    height: 250px;
+    border: 5px groove beige;
+    border-radius: 5%;
+  }
+}
+@media (max-width: 400px) and (max-width: 400px) and (max-width: 400px) {
+  .foodie-content .sushi-container .sushi-img-container .sushi-3 {
+    width: 250px;
+    height: 250px;
+    border: 5px groove beige;
+    border-radius: 5%;
+  }
+}
+@media (max-width: 400px) and (max-width: 400px) and (max-width: 400px) {
+  .foodie-content .sushi-container .sushi-img-container .sushi-4 {
+    width: 250px;
+    height: 250px;
+    border: 5px groove beige;
+    border-radius: 5%;
+  }
 }
 .about-content {
   height: 100vh;

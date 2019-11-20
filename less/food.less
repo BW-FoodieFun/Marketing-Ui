@@ -1,12 +1,21 @@
 body {
   background: #09020f;
 }
+/*
 
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive;
+
+*/
 .foodie-content {
   background: #0d0811;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   .foodie-header {
     color: beige;
@@ -16,10 +25,67 @@ body {
     width: 95%;
     margin: 0 auto;
 
+    @media @tablet {
+      width: 100%;
+      //background: red;
+      .flex-column();
+      padding-bottom: 50px;
+    }
+
+    @media @small-vp {
+      //background: red;
+      display: flex;
+      .flex-column();
+    }
+
+    @media @phone {
+      //background: red;
+      display: flex;
+      .flex-column();
+    }
+
+    @media @nine-hundredpx {
+      //background: red;
+      width: 100%;
+      .flex-row-space-between();
+    }
+
+    @media @desktop {
+      width: 95%;
+      margin: 0 auto;
+    }
+
     h1 {
-      font-family: "Baloo Bhai", cursive;
+      //font-family: "Baloo Bhai", cursive;
+      font-family: "Pacifico", cursive;
       font-size: 3rem;
       width: 45%;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @small-vp {
+        font-size: 2.7rem;
+        width: 100%;
+        background: #0d0811;
+        border: 2px double beige;
+        border-radius: 5%;
+      }
+
+      @media @phone {
+        font-size: 2.7rem;
+        width: 100%;
+        background: #0d0811;
+        border: 2px double beige;
+        border-radius: 5%;
+      }
+
+      @media @nine-hundredpx {
+        //background: crimson;
+        width: 40%;
+        font-size: 2.5rem;
+      }
     }
 
     nav {
@@ -28,6 +94,31 @@ body {
       display: flex;
       justify-content: space-evenly;
       flex-direction: row;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @small-vp {
+        //background: red;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+      }
+
+      @media @phone {
+        width: 95%;
+        //background: red;
+        padding-bottom: 30px;
+        margin: 0 auto;
+      }
+
+      @media @nine-hundredpx {
+        //background: crimson;
+        width: 55%;
+      }
 
       a {
         color: bisque;
@@ -38,6 +129,21 @@ body {
         justify-content: center;
         font-size: 1.5rem;
         padding-top: 70px;
+
+        @media @small-vp {
+          font-size: 1.3rem;
+          // border: 2px solid red;
+          display: flex;
+          padding-bottom: 20px;
+        }
+
+        @media @phone {
+          font-size: 0.9rem;
+        }
+
+        @media @nine-hundredpx {
+          font-size: 1rem;
+        }
       }
 
       a:hover {
@@ -46,4 +152,95 @@ body {
       }
     }
   } //end of header
+
+  .food-header-img-container {
+    background: url("https://i1.wp.com/www.westside.social/wp-content/uploads/2017/12/food-background-food-concept-with-various-tasty-fresh-ingredients-for-cooking-italian-food-ingredients-view-from-above-with-copy-space_1220-1491-2-e1513108150131.jpg?ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+      background: black;
+      color: beige;
+      text-align: center;
+      width: 60%;
+      margin: 0 auto;
+      font-family: "Lobster", cursive;
+    }
+
+    p {
+      font-family: "Permanent Marker", cursive;
+      color: beige;
+      background: #0d0811;
+      text-align: left;
+      padding: 20px;
+    }
+  } //.food-header-img-container
+
+  .sushi-container {
+    background: red;
+
+    @media @small-vp {
+      color: beige;
+      background: #09020f;
+      font-family: "Permanent Marker", cursive;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .sushi-text {
+        border: 2px double beige;
+        border-radius: 5%;
+        padding: 20px;
+      }
+
+      .sushi-img-container {
+        @media @small-vp {
+          //background: red;
+          //   display: flex;
+          //   justify-content: center;
+          //   flex-direction: column;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          displa .sushi-1 {
+            @media @small-vp {
+              width: 250px;
+              height: 250px;
+              //   margin: 0 auto;
+              //   text-align: center;
+              //   display: inline-block;
+              border: 5px groove beige;
+              border-radius: 5%;
+            }
+          }
+
+          .sushi-2 {
+            @media @small-vp {
+              width: 250px;
+              height: 250px;
+              border: 5px groove beige;
+              border-radius: 5%;
+            }
+          }
+
+          .sushi-3 {
+            @media @small-vp {
+              width: 250px;
+              height: 250px;
+              border: 5px groove beige;
+              border-radius: 5%;
+            }
+          }
+
+          .sushi-4 {
+            @media @small-vp {
+              width: 250px;
+              height: 250px;
+              border: 5px groove beige;
+              border-radius: 5%;
+            }
+          }
+        }
+      } //sushi-img-container
+    }
+  } // sushi-container
 } //end of foodie-content
