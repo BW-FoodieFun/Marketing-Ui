@@ -573,7 +573,6 @@ header {
 }
 header div {
   width: 15%;
-  align-content: center;
   margin: 1%;
   padding: 2%;
 }
@@ -614,6 +613,7 @@ header nav a:hover {
 @media (max-width: 600px) {
   header {
     flex-direction: column;
+    align-items: center;
   }
 }
 footer {
