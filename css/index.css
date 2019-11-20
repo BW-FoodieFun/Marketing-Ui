@@ -1,43 +1,49 @@
-body {
-  background: #09020f;
+.foodie {
+  display: flex;
+  width: 100%;
+  border-top: 2px dashed #ffe4c4;
+  color: #ffe4c4;
 }
-.foodie-content {
-  background: #0d0811;
-  height: 100vh;
+.foodie .foodie-left {
   display: flex;
   flex-direction: column;
-}
-.foodie-content .foodie-header {
-  color: beige;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  text-align: center;
   width: 95%;
-  margin: 0 auto;
+  margin: 2%;
+  padding: 2%;
 }
-.foodie-content .foodie-header h1 {
-  font-family: "Baloo Bhai", cursive;
-  font-size: 3rem;
-  width: 45%;
+.foodie .foodie-left h2 {
+  margin: 1%;
+  padding: 1%;
 }
-.foodie-content .foodie-header nav {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+.foodie .foodie-left p {
+  margin: 1%;
+  padding: 1%;
+  line-height: 2rem;
 }
-.foodie-content .foodie-header nav a {
-  color: bisque;
-  text-decoration: none;
-  font-family: "Cabin", sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-  padding-top: 70px;
+.foodie .foodie-right {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
 }
-.foodie-content .foodie-header nav a:hover {
-  color: red;
-  cursor: pointer;
+.foodie .foodie-right img {
+  height: auto;
+  width: 100%;
+  margin: 2%;
+  padding: 2%;
+}
+@media (max-width: 600px) {
+  .foodie .foodie-right img {
+    width: 95%;
+    margin: 1%;
+    padding: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .foodie {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .about-content {
   height: 100vh;
