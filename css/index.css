@@ -585,6 +585,7 @@ header div {
 header div img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 1%;
   padding: 1%;
 }
@@ -692,6 +693,7 @@ footer nav a:hover {
 .introduction .introduction-right img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 2%;
   padding: 2%;
 }
@@ -722,6 +724,7 @@ footer nav a:hover {
 .capabilities .capabilities-left img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
 }
 @media (max-width: 600px) {
   .capabilities .capabilities-left img {
@@ -778,6 +781,7 @@ footer nav a:hover {
 .notebook .notebook-right img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 1%;
   padding: 1%;
 }
@@ -822,6 +826,7 @@ footer nav a:hover {
 .benefits .benefits-right img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 1%;
   padding: 1%;
 }
@@ -867,6 +872,7 @@ footer nav a:hover {
   font-size: 2rem;
   color: #f5f5dc;
   background-color: #a9a9a9;
+  border-radius: 5%;
   margin: 1%;
   padding: 1%;
 }
