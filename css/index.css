@@ -608,10 +608,10 @@ header nav {
 header nav a {
   text-decoration: none;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: #ffe4c4;
-  margin: 1%;
-  padding: 1%;
+  margin: 2%;
+  padding: 2%;
 }
 @media (max-width: 600px) {
   header nav a {
