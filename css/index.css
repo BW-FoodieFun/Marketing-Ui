@@ -672,6 +672,7 @@ footer nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 95%;
   margin: 2%;
   padding: 2%;
@@ -737,6 +738,7 @@ footer nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 95%;
   margin: 2%;
   padding: 2%;
@@ -760,6 +762,7 @@ footer nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 95%;
   margin: 2%;
   padding: 2%;
@@ -817,6 +820,7 @@ footer nav a:hover {
 }
 .benefits .benefits-left p {
   line-height: 2rem;
+  text-align: center;
 }
 .benefits .benefits-right {
   width: 100%;
@@ -849,7 +853,7 @@ footer nav a:hover {
   align-items: center;
   width: 100%;
   line-height: 2rem;
-  margin: 2%;
+  margin: 3%;
   padding: 2%;
 }
 .sign-up .sign-up-bottom h2 {
@@ -858,11 +862,12 @@ footer nav a:hover {
 }
 .sign-up .sign-up-bottom p {
   width: 50%;
+  text-align: center;
 }
 @media (max-width: 600px) {
   .sign-up .sign-up-bottom p {
     width: 90%;
-    margin: 1%;
+    margin: 2%;
     padding: 1%;
   }
 }
@@ -871,7 +876,7 @@ footer nav a:hover {
   height: auto;
   font-size: 2rem;
   color: #f5f5dc;
-  background-color: #a9a9a9;
+  background-color: #f4a460;
   border-radius: 5%;
   margin: 1%;
   padding: 1%;
