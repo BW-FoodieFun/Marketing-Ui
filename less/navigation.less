@@ -9,6 +9,7 @@ header {
 		img {
 			height: auto;
 			width: 100%;
+			border-radius: 10%;
 			.spacing(1%, 1%);
 		}
 
@@ -25,9 +26,13 @@ header {
 		a {
 			justify-content: center;
 			text-decoration: none;
-			font-size: 1.8rem;
+			font-size: 3rem;
 			color: @main-color;
-			.spacing(8%, 0);
+			.spacing(7%, 1%);
+
+			@media @mobile {
+				font-size: 1.8rem;
+			}
 		}
 
 		a:hover {

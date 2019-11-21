@@ -585,6 +585,7 @@ header div {
 header div img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 1%;
   padding: 1%;
 }
@@ -606,10 +607,15 @@ header nav {
 header nav a {
   justify-content: center;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: #ffe4c4;
-  margin: 8%;
-  padding: 0;
+  margin: 7%;
+  padding: 1%;
+}
+@media (max-width: 600px) {
+  header nav a {
+    font-size: 1.8rem;
+  }
 }
 header nav a:hover {
   cursor: pointer;
@@ -666,6 +672,7 @@ footer nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 95%;
   margin: 2%;
   padding: 2%;
@@ -687,6 +694,7 @@ footer nav a:hover {
 .introduction .introduction-right img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 2%;
   padding: 2%;
 }
@@ -717,6 +725,7 @@ footer nav a:hover {
 .capabilities .capabilities-left img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
 }
 @media (max-width: 600px) {
   .capabilities .capabilities-left img {
@@ -729,6 +738,7 @@ footer nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 95%;
   margin: 2%;
   padding: 2%;
@@ -752,6 +762,7 @@ footer nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 95%;
   margin: 2%;
   padding: 2%;
@@ -773,6 +784,7 @@ footer nav a:hover {
 .notebook .notebook-right img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 1%;
   padding: 1%;
 }
@@ -808,6 +820,7 @@ footer nav a:hover {
 }
 .benefits .benefits-left p {
   line-height: 2rem;
+  text-align: center;
 }
 .benefits .benefits-right {
   width: 100%;
@@ -817,6 +830,7 @@ footer nav a:hover {
 .benefits .benefits-right img {
   height: auto;
   width: 100%;
+  border-radius: 10%;
   margin: 1%;
   padding: 1%;
 }
@@ -839,7 +853,7 @@ footer nav a:hover {
   align-items: center;
   width: 100%;
   line-height: 2rem;
-  margin: 2%;
+  margin: 3%;
   padding: 2%;
 }
 .sign-up .sign-up-bottom h2 {
@@ -848,11 +862,12 @@ footer nav a:hover {
 }
 .sign-up .sign-up-bottom p {
   width: 50%;
+  text-align: center;
 }
 @media (max-width: 600px) {
   .sign-up .sign-up-bottom p {
     width: 90%;
-    margin: 1%;
+    margin: 2%;
     padding: 1%;
   }
 }
@@ -861,7 +876,8 @@ footer nav a:hover {
   height: auto;
   font-size: 2rem;
   color: #f5f5dc;
-  background-color: #a9a9a9;
+  background-color: #f4a460;
+  border-radius: 5%;
   margin: 1%;
   padding: 1%;
 }
