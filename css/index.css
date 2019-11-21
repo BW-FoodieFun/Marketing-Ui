@@ -347,6 +347,7 @@ font-family: 'Satisfy', cursive; */
   flex-direction: row;
   width: 95%;
   margin: 0 auto;
+  background: black;
 }
 @media (min-width: 700px) {
   .about-content .about-header {
@@ -355,6 +356,7 @@ font-family: 'Satisfy', cursive; */
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding-top: 50px;
   }
 }
 @media (max-width: 400px) {
@@ -389,13 +391,19 @@ font-family: 'Satisfy', cursive; */
   }
 }
 .about-content .about-header h1 {
-  font-family: "Baloo Bhai", cursive;
+  font-family: "Lobster", cursive;
   font-size: 3rem;
   width: 45%;
 }
 @media (min-width: 700px) {
   .about-content .about-header h1 {
     width: 100%;
+    font-size: 5rem;
+    color: beige;
+    border: 2px solid beige;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5%;
   }
 }
 @media (max-width: 400px) {
@@ -889,6 +897,11 @@ header nav a {
   margin: 8%;
   padding: 0;
 }
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1rem;
+  }
+}
 header nav a:hover {
   cursor: pointer;
   background-color: #f5f5dc;
@@ -898,11 +911,6 @@ header nav a:hover {
   header {
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (max-width: 400px) {
-  header {
-    background: black;
   }
 }
 footer {
@@ -1129,6 +1137,12 @@ footer nav a:hover {
   margin: 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .sign-up .sign-up-bottom h2 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
 .sign-up .sign-up-bottom p {
   width: 50%;
 }
@@ -1137,6 +1151,7 @@ footer nav a:hover {
     width: 90%;
     margin: 1%;
     padding: 1%;
+    font-size: 1.3rem;
   }
 }
 .sign-up .sign-up-bottom .button {
@@ -1148,8 +1163,86 @@ footer nav a:hover {
   margin: 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .sign-up .sign-up-bottom .button {
+    font-size: 1.2rem;
+  }
+}
 .sign-up .sign-up-bottom .button:hover {
   cursor: pointer;
   background-color: #f5f5dc;
   color: black;
+}
+.container {
+  padding: 16px;
+  background-color: black;
+}
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 700px) {
+  .container h1 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .container p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    max-resolution: 0 auto;
+    border: 2px solid beige;
+    border-radius: 5%;
+    padding: 20px;
+  }
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }

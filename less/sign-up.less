@@ -1,84 +1,177 @@
 // benefits
 
 .benefits {
-	display: flex;
-	width: 100%;
-	border-top: 2px dashed @main-color;
+  display: flex;
+  width: 100%;
+  border-top: 2px dashed @main-color;
 
-	.benefits-left {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 95%;
-		.spacing(2%, 2%);
+  .benefits-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    .spacing(2%, 2%);
 
-		h2 {
-			.spacing(2%, 2%);
-		}
+    h2 {
+      .spacing(2%, 2%);
+    }
 
-		p {
-			line-height: 2rem;
-		}
-	}
+    p {
+      line-height: 2rem;
+    }
+  }
 
-	.benefits-right {
-		width: 100%;
-		.spacing(1%, 1%);
+  .benefits-right {
+    width: 100%;
+    .spacing(1%, 1%);
 
-		img {
-			height: auto;
-			width: 100%;
-			.spacing(1%, 1%);
-		}
-	}
+    img {
+      height: auto;
+      width: 100%;
+      .spacing(1%, 1%);
+    }
+  }
 
-	@media @mobile {
-		display: flex;
-		flex-direction: column;
-	}
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .sign-up {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-top: 2px dashed @main-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px dashed @main-color;
 
-	.sign-up-bottom {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		line-height: 2rem;
-		.spacing(2%, 2%);
+  .sign-up-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 2rem;
+    .spacing(2%, 2%);
 
-		h2 {
-			.spacing(1%, 1%);
-		}
+    h2 {
+      .spacing(1%, 1%);
 
-		p {
-			width: 50%;
+      @media @phone {
+        //background: red;
+        padding: 10px;
+        font-size: 2rem;
+      }
+    }
 
-			@media @mobile {
-				width: 90%;
-				.spacing(1%, 1%);
-			}
-		}
+    p {
+      width: 50%;
 
-		.button {
-			width: 20%;
-			height: auto;
-			font-size: 2rem;
-			color: @secondary-color;
-			background-color: #a9a9a9;
-			.spacing(1%, 1%);
-		}
+      @media @mobile {
+        width: 90%;
+        .spacing(1%, 1%);
+        font-size: 1.3rem;
+      }
+    }
 
-		.button:hover {
-			cursor: pointer;
-			background-color: @secondary-color;
-			color: black;
-		}
-	}
+    .button {
+      width: 20%;
+      height: auto;
+      font-size: 2rem;
+      color: @secondary-color;
+      background-color: #a9a9a9;
+      .spacing(1%, 1%);
+
+      @media @phone {
+        font-size: 1.2rem;
+      }
+    }
+
+    .button:hover {
+      cursor: pointer;
+      background-color: @secondary-color;
+      color: black;
+    }
+  }
+}
+
+.container {
+  padding: 16px;
+  background-color: black;
+
+  h1 {
+    @media @phone {
+      font-size: 2rem;
+      padding-bottom: 10px;
+    }
+
+    @media @tablet {
+      font-size: 3rem;
+      padding-bottom: 10px;
+    }
+  }
+
+  p {
+    @media @phone {
+      font-size: 1.1rem;
+      //background: red;
+    }
+  }
+
+  @media @phone {
+    width: 90%;
+    max-resolution: 0 auto;
+    border: 2px solid beige;
+    border-radius: 5%;
+    padding: 20px;
+  }
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }
