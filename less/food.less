@@ -1,44 +1,311 @@
 .foodie {
-	display: flex;
-	width: 100%;
-	border-top: 2px dashed @main-color;
-	color: @main-color;
+  display: flex;
+  width: 100%;
+  border-top: 2px dashed @main-color;
+  color: @main-color;
 
-	.foodie-left {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		width: 95%;
-		.spacing(2%, 2%);
+  @media @nine-hundredpx {
+    //background: red;
+    border-bottom: 3px dashed beige;
+  }
 
-		h2 {
-			.spacing(1%, 1%);
-		}
+  @media @tablet {
+    border-bottom: 2px dashed beige;
+  }
 
-		p {
-			.spacing(1%, 1%);
-			line-height: 2rem;
-		}
-	}
+  /* font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive; */
 
-	.foodie-right {
-		width: 100%;
-		.spacing(1%, 1%);
+  .foodie-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    .spacing(2%, 2%);
 
-		img {
-			height: auto;
-			width: 100%;
-			.spacing(2%, 2%);
+    h2 {
+      .spacing(1%, 1%);
 
-			@media @mobile {
-				width: 95%;
-				.spacing(1%, 2%);
-			}
-		}
-	}
+      @media @phone {
+        background: black;
+        font-family: "Courgette", cursive;
+        border: 2px ridge beige;
+        font-size: 2.6rem;
+        width: 65%;
+        margin: 0 auto;
+        padding: 7px;
+      }
 
-	@media @mobile {
-		display: flex;
-		flex-direction: column-reverse;
-	}
+      @media @nine-hundredpx {
+        font-size: 4rem;
+        font-family: "Satisfy", cursive;
+      }
+
+      @media @tablet {
+        background: black;
+        font-family: "Satisfy", cursive;
+        padding: 12px;
+      }
+    }
+
+    p {
+      .spacing(1%, 1%);
+      line-height: 2rem;
+
+      @media @phone {
+        font-family: "Permanent Marker", cursive;
+        font-size: 1.3rem;
+        border-bottom: 3px dashed beige;
+        padding-bottom: 30px;
+      }
+
+      @media @nine-hundredpx {
+        font-family: "Permanent Marker", cursive;
+      }
+
+      @media @tablet {
+        font-family: "Permanent Marker", cursive;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .foodie-right {
+    width: 100%;
+    .spacing(1%, 1%);
+
+    img {
+      height: auto;
+      width: 100%;
+      .spacing(2%, 2%);
+
+      @media @mobile {
+        width: 95%;
+        .spacing(1%, 2%);
+      }
+    }
+  }
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
+
+.foodie-header {
+  @media @nine-hundredpx {
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  @media @phone {
+    background: black;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  @media @tablet {
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h1 {
+    @media @nine-hundredpx {
+      font-size: 4rem;
+      width: 50%;
+      margin: 0 auto;
+      border: 2px solid beige;
+      font-family: "Lobster", cursive;
+      padding: 20px;
+    }
+
+    @media @phone {
+      font-size: 2.5rem;
+      width: 50%;
+      margin: 0 auto;
+      border: 2px solid beige;
+      font-family: "Lobster", cursive;
+      padding: 10px;
+    }
+
+    @media @tablet {
+      font-family: "Lobster", cursive;
+      font-size: 4rem;
+      width: 50%;
+      border: 2px solid beige;
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 5%;
+    }
+  }
+
+  nav {
+    font-family: "Courgette", cursive;
+
+    a {
+      font-size: 2.3rem;
+
+      @media @phone {
+        font-size: 1.4rem;
+      }
+
+      @media @tablet {
+        font-size: 2rem;
+      }
+    }
+  }
+} //foodie-header
+
+.sushi-content {
+  @media @phone {
+    //background: red;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .about-sushi {
+    background: black;
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      //background: red;
+      padding-top: 20px;
+      border: 2px groove beige;
+    }
+
+    @media @tablet {
+      padding-top: 30px;
+    }
+
+    @media @nine-hundredpx {
+      padding-top: 50px;
+    }
+
+    h2 {
+      @media @phone {
+        background: black;
+        border: 2px solid beige;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.7rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "Lobster", cursive;
+      }
+
+      @media @tablet {
+        font-family: "Lobster", cursive;
+        text-align: center;
+        border: 2px solid beige;
+        padding: 10px;
+        width: 60%;
+        margin: 0 auto;
+        font-size: 2.3rem;
+        border-radius: 5%;
+      }
+
+      @media @nine-hundredpx {
+        font-size: 3rem;
+        background: black;
+        border: 2px solid beige;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "Lobster", cursive;
+      }
+    }
+
+    p {
+      @media @phone {
+        background: black;
+        padding: 15px;
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        font-family: "Pacifico", cursive;
+      }
+
+      @media @tablet {
+        font-size: 1.6rem;
+        font-family: "Pacifico", cursive;
+        padding: 20px;
+      }
+
+      @media @nine-hundredpx {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: "Pacifico", cursive;
+        padding-left: 30px;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .sushi-img-container {
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    //margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-bottom: 2px dashed beige;
+
+    @media @tablet {
+      padding: 40px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+    @media @nine-hundredpx {
+      // background: red;
+      padding: 40px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+    .sushi {
+      @media @phone {
+        height: 300px;
+        width: 390px;
+        margin: auto;
+        //border: 2px solid beige;
+        border-radius: 2%;
+        padding-bottom: 20px;
+      }
+
+      @media @tablet {
+        width: 160px;
+        height: 160px;
+        border-radius: 2%;
+      }
+
+      @media @nine-hundredpx {
+        width: 200px;
+        height: 200px;
+        border-radius: 2%;
+      }
+    }
+  }
+} //sushi-content
