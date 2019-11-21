@@ -603,14 +603,15 @@ header nav {
   justify-content: space-around;
   align-content: center;
   width: 95%;
+  align-items: center;
 }
 header nav a {
-  justify-content: center;
   text-decoration: none;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2.2rem;
   color: #ffe4c4;
-  margin: 7%;
-  padding: 1%;
+  margin: 2%;
+  padding: 2%;
 }
 @media (max-width: 600px) {
   header nav a {
